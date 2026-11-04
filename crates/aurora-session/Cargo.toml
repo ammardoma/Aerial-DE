@@ -1,0 +1,22 @@
+[package]
+name = "aurora-session"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "aurora-session"
+path = "src/main.rs"
+
+[[bin]]
+name = "aurora-msg"
+path = "src/msg_cli.rs"
+
+[dependencies]
+aurora-config = { path = "../aurora-config" }
+aurora-ipc = { path = "../aurora-ipc" }
+tokio = { version = "1.0", features = ["full"] }
+clap = { version = "4.4", features = ["derive"] }
+log = "0.4"
+env_logger = "0.11"

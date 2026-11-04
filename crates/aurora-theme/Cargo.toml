@@ -1,0 +1,10 @@
+[package]
+name = "aurora-theme"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+aurora-config = { path = "../aurora-config" }

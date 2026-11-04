@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "crates/aurora-config",
+    "crates/aurora-theme",
+    "crates/aurora-wm",
+    "crates/aurora-shell",
+    "crates/aurora-settings",
+    "crates/aurora-ipc",
+    "crates/aurora-session",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Aurora DE Developers"]
+license = "MIT"
